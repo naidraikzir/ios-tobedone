@@ -14,6 +14,8 @@
 		B32854D520429FBB00AD0E6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32854D320429FBB00AD0E6B /* LaunchScreen.storyboard */; };
 		B32854E020429FBB00AD0E6B /* tobedoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32854DF20429FBB00AD0E6B /* tobedoneTests.swift */; };
 		B32854EB20429FBB00AD0E6B /* tobedoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32854EA20429FBB00AD0E6B /* tobedoneUITests.swift */; };
+		B32854F92042A3D500AD0E6B /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32854F82042A3D500AD0E6B /* AddController.swift */; };
+		B32854FB2042A53E00AD0E6B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32854FA2042A53E00AD0E6B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		B32854E620429FBB00AD0E6B /* tobedoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tobedoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32854EA20429FBB00AD0E6B /* tobedoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tobedoneUITests.swift; sourceTree = "<group>"; };
 		B32854EC20429FBB00AD0E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B32854F82042A3D500AD0E6B /* AddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
+		B32854FA2042A53E00AD0E6B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 			children = (
 				B32854CA20429FBB00AD0E6B /* AppDelegate.swift */,
 				B32854CC20429FBB00AD0E6B /* ViewController.swift */,
+				B32854F82042A3D500AD0E6B /* AddController.swift */,
 				B32854CE20429FBB00AD0E6B /* Main.storyboard */,
 				B32854D120429FBB00AD0E6B /* Assets.xcassets */,
 				B32854D320429FBB00AD0E6B /* LaunchScreen.storyboard */,
 				B32854D620429FBB00AD0E6B /* Info.plist */,
+				B32854FA2042A53E00AD0E6B /* Constants.swift */,
 			);
 			path = tobedone;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32854F92042A3D500AD0E6B /* AddController.swift in Sources */,
 				B32854CD20429FBB00AD0E6B /* ViewController.swift in Sources */,
 				B32854CB20429FBB00AD0E6B /* AppDelegate.swift in Sources */,
+				B32854FB2042A53E00AD0E6B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RLXUW7A237;
 				INFOPLIST_FILE = tobedone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.unrizki.tobedone;
@@ -441,6 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RLXUW7A237;
 				INFOPLIST_FILE = tobedone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.unrizki.tobedone;
