@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddController: UIViewController {
+class AddController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var newEntry: UITextField!
 
@@ -16,6 +16,7 @@ class AddController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        newEntry.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,11 +25,19 @@ class AddController: UIViewController {
     }
     
     @IBAction func addButton(_ sender: UIButton) {
-        let newTodo = newEntry.text
+        appendTodo(newTodo: newEntry.text)
+    }
+    
+    func appendTodo(newTodo: String!) {
         if newTodo != nil && newTodo != "" {
-            todoList?.append(newTodo!)
+            todoList?.append(newTodo)
             newEntry.text = ""
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        appendTodo(newTodo: newEntry.text)
+        return true
     }
     
 
